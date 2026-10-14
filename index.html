@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Character Randomizer</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="Heading">DND Character Generator</div>
+		<div class="Parker">
+			<table>
+				<tr>
+					<td><button onclick="rolld8()" type="button">Generate Race</button></td>
+					<td><button type="button">Generate Class</button></td>
+					<td><button type="button">Generate Background</button></td>
+					<td><button type="button">Generate Alignment</button></td>
+				</tr>
+				<tr>
+					<td><textarea class="result" id="result1" placeholder="Race Result"></textarea></td>
+					<td><textarea class="result" placeholder="Class Result"></textarea></td>
+					<td><textarea class="result" placeholder="Background Result"></textarea></td>
+					<td><textarea class="result" placeholder="Alignment Result"></textarea></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
+<script>
+	function rolld8(){
+		let randomNumber = Math.floor(Math.random() * 8) + 1;
+		let randomRaceCategory = "";
+		let randomNumber2 = 0;
+		let randomRace = "";
+		switch(randomNumber){
+			case 1:
+				randomRaceCategory = "Celestial";
+				randomNumber2 = Math.floor(Math.random() * 6) + 1;
+				switch(randomNumber2){
+					case 1:
+						randomRace = "Angel";
+						break;
+					case 2:
+						randomRace = "Felinae";
+						break;
+					case 3:
+						randomRace = "Kitsune";
+						break;
+					case 4:
+						randomRace = "Aasimar";
+						break;
+					case 5:
+						randomRace = "Star Children";
+						break;
+					case 6:
+						randomRace = "Exorcists";
+						break;
+				}
+				break;
+			case 2:
+				randomRaceCategory = "Demonic";
+				randomNumber2 = Math.floor(Math.random() * 12) + 1;
+				switch(randomNumber2){
+					case 1:
+						randomRace = "Oni";
+						break;
+					case 2:
+						randomRace = "Majin";
+						break;
+					case 3:
+						randomRace = "Gargoyles";
+						break;
+					case 4:
+						randomRace = "Incubi/Succubi";
+						break;
+					case 5:
+						randomRace = "Cambion";
+						break;
+					case 6:
+						randomRace = "Tiefling";
+						break;
+					case 7:
+						randomRace = "Phantoms";
+						break;
+					case 8:
+						randomRace = "Imp";
+						break;
+					case 9:
+						randomRace = "Hellhounds";
+						break;
+					case 10:
+						randomRace = "Nagas";
+						break;
+					case 11:
+						randomRace = "Djinn";
+						break;
+					case 12:
+						randomRace = "Changelings";
+						break;
+				}
+				break;
+			case 3:
+				randomRaceCategory = "Fey";
+				randomNumber2 = Math.floor(Math.random() * 8) + 1;
+				switch(randomNumber2){
+					case 1:
+						randomRace = "Elven";
+						break;
+					case 2:
+						randomRace = "Kindling";
+						break;
+					case 3:
+						randomRace = "Half-Fae";
+						break;
+					case 4:
+						randomRace = "Gnome";
+						break;
+					case 5:
+						randomRace = "Goliath";
+						break;
+					case 6:
+						randomRace = "Moornulls";
+						break;
+					case 7:
+						randomRace = "Entomorphs";
+						break;
+					case 8:
+						randomRace = "Buddels";
+						break;
+				}
+				break;
+			case 4:
+				randomRaceCategory = "Faunilia";
+				randomNumber2 = Math.floor(Math.random() * 20) + 1;
+				switch(randomNumber2){
+					case 1:
+						randomRace = "Procyons";
+						break;
+					case 2:
+						randomRace = "Batfolk";
+						break;
+					case 3:
+						randomRace = "Dragonborn";
+						break;
+					case 4:
+						randomRace = "Aarakocra";
+						break;
+					case 5:
+						randomRace = "Aalarus";
+						break;
+					case 6:
+						randomRace = "Lizardfolk";
+						break;
+					case 7:
+						randomRace = "Harengon";
+						break;
+					case 8:
+						randomRace = "Mousefolk";
+						break;
+					case 9:
+						randomRace = "Ratfolk";
+						break;
+					case 10:
+						randomRace = "Moeskins";
+						break;
+					case 11:
+						randomRace = "Loxodon";
+						break;
+					case 12:
+						randomRace = "Tabaxi";
+						break;
+					case 13:
+						randomRace = "Weasalfolk";
+						break;
+					case 14:
+						randomRace = "Canids";
+						break;
+					case 15:
+						randomRace = "Ursains";
+						break;
+					case 16:
+						randomRace = "Vulpins";
+						break;
+					case 17:
+						randomRace = "Osteokin";
+						break;
+					case 18:
+						randomRace = "Pikas";
+						break;
+					case 19:
+						randomRace = "Scrunidae";
+						break;
+					case 20:
+						randomRace = "Tortle";
+						break;
+				}
+				break;
+			case 5:
+				randomRaceCategory = "Humanoid";
+				randomNumber2 = Math.floor(Math.random() * 8) + 1;
+				switch(randomNumber2){
+					case 1:
+						randomRace = "Caprines";
+						break;
+					case 2:
+						randomRace = "Satyrs";
+						break;
+					case 3:
+						randomRace = "Dragonoids";
+						break;
+					case 4:
+						randomRace = "Dwarves";
+						break;
+					case 5:
+						randomRace = "Harpies";
+						break;
+					case 6:
+						randomRace = "Half Faun";
+						break;
+					case 7:
+						randomRace = "Centaurs";
+						break;
+					case 8:
+						randomRace = "Dolls (Humanoid Comstructs)";
+						break;
+				}
+				break;
+			case 6:
+				randomRaceCategory = "Monster";
+				randomNumber2 = Math.floor(Math.random() * 12) + 1;
+				switch(randomNumber2){
+					case 1:
+						randomRace = "Goblins";
+						break;
+					case 2:
+						randomRace = "Nimbles";
+						break;
+					case 3:
+						randomRace = "Arachnae";
+						break;
+					case 4:
+						randomRace = "Dwellers";
+						break;
+					case 5:
+						randomRace = "Slimeborn";
+						break;
+					case 6:
+						randomRace = "Kobold";
+						break;
+					case 7:
+						randomRace = "Orcs";
+						break;
+					case 8:
+						randomRace = "Half Orc";
+						break;
+					case 9:
+						randomRace = "Serpentine";
+						break;
+					case 10:
+						randomRace = "Insectoids";
+						break;
+					case 11:
+						randomRace = "Gnoll";
+						break;
+					case 12:
+						randomRace = "Minotaur";
+						break;
+				}
+				break;
+			case 7:
+				randomRaceCategory = "Aquatic";
+				randomNumber2 = Math.floor(Math.random() * 6) + 1;
+				switch(randomNumber2){
+					case 1:
+						randomRace = "Merfolk";
+						break;
+					case 2:
+						randomRace = "Siren";
+						break;
+					case 3:
+						randomRace = "Tritons";
+						break;
+					case 4:
+						randomRace = "Xotls";
+						break;
+					case 5:
+						randomRace = "Sinnipns";
+						break;
+					case 6:
+						randomRace = "Crustaceas";
+						break;
+				}
+				break;
+			case 8:
+				randomRaceCategory = "Elemental";
+				randomNumber2 = Math.floor(Math.random() * 8) + 1;
+				switch(randomNumber2){
+					case 1:
+						randomRace = "Genasi";
+						break;
+					case 2:
+						randomRace = "Candleheads";
+						break;
+					case 3:
+						randomRace = "Inkbond";
+						break;
+					case 4:
+						randomRace = "Elementborn";
+						break;
+					case 5:
+						randomRace = "Cryoforms";
+						break;
+					case 6:
+						randomRace = "Breezelins";
+						break;
+					case 7:
+						randomRace = "Golems";
+						break;
+					case 8:
+						randomRace = "Lightborn";
+						break;
+				}
+				break;
+		}
+		document.getElementById("result1").value = "Race Category: " + randomNumber + "-" + randomRaceCategory + "\nRace: " + randomNumber2 + "-" + randomRace;
+	}
+</script>

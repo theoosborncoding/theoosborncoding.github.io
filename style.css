@@ -1,0 +1,48 @@
+body {
+	background-color: #DDAE7E;
+}
+
+.Heading{
+	background-color: #663300;
+	color: WHITE;
+	border-radius: 5px;
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	font-size: 50px;
+}
+img{
+	
+}
+.Parker{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+}
+
+button{
+	background-color: #86592d;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 5px;
+	margin: 15px;
+	border-radius: 3px;
+}
+
+.result{
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 5px;
+	margin: 10px;
+	border-radius: 3px;
+	height: 100px;
+}
+button:active{
+	background-color: #663300; 
+}
